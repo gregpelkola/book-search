@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Outlet, Route } from 'react-router-dom';
+import { Outlet, Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
 import SearchBooks from './pages/SearchBooks';
