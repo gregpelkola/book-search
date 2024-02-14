@@ -12,13 +12,14 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  context: authMiddleware,
 });
 // if we're in production, serve client/build as static assets
 // app.use(routes);
 
 const startApolloServer = async () => {
   await server.start();
-  // server.applyMiddleware({ app });
+  server.applyMiddleware({ app });
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
   app.use('/graphql', expressMiddleware(server, {
