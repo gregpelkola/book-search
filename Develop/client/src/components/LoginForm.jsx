@@ -5,6 +5,7 @@ import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 
+
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated, setValidated] = useState(false);
@@ -40,7 +41,7 @@ const LoginForm = () => {
         variables: { ...userFormData },
       });
       
-      const { token, user } = data.loginUser;
+      const { token, user } = data.login;
       console.log(user);
       Auth.login(token);
     } catch (err) {
