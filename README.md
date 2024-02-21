@@ -39,6 +39,9 @@ Clone the repository, open in VSCode or other IDE.
 
 Provide instructions and examples for use. Include screenshots as needed.
 
+
+Deployed:   https://book-search-uw5r.onrender.com/
+
 Run npm i in the terminal at the root level, then run npm run develop to start the application. Navigate to the browser at http://localhost:3001, to view the application for testing.
 To create an account, follow instructions for creating account on the sign up page. Once account is created you will be redirected and logged in. To search for books, type a book title or author into the search field, you will be redirected to a search results page displaying the results of your search. To add a book to your list click on the save book button located at the bottom of the book description. To view your list click See Your Books in the naviagtion bar, once redirected you will see a list of books in your list. To remove a book from your list click the button for Delete this Book. To logout click logout in the navigation bar and you will be redirected to the homepage with an option to sign up or login.
 
